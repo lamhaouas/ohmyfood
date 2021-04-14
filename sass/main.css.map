@@ -2,7 +2,17 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "main.sass"
+        "main.sass",
+        "utils/_variables.scss",
+        "base/_typography.scss",
+        "component/_buttons.scss",
+        "layout/_nav.scss",
+        "layout/_container.scss",
+        "layout/_footer.scss",
+        "pages/_home.scss",
+        "pages/_bastille.scss",
+        "pages/_le-gourmand.scss",
+        "pages/_the-full-palette.scss"
     ],
     "names": [],
     "file": "main.css"
