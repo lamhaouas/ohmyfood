@@ -1,8 +1,29 @@
 .footer {
     background-color: #353535;
+    height: 30vh;
+    padding: 40px 30px;
 
     &__title {
+        color: white;
         font-family: $font-title;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+
+        &--link {
+            color: white;
+            text-decoration: none;
+            font-family: $font-text;
+            margin: 5px;
+            i{
+                margin-right: 10px;
+            }
+        }
 
     }
 

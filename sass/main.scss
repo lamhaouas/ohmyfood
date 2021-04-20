@@ -1,18 +1,18 @@
 @import "./utils/variables";
-@import "./utils/animations";
-@import "./base/typography";
+@import "./utils/mixin";
+
+@import "./base/animations";
+@import "./base/base";
+
 @import "./component/buttons";
+@import "./component/cards";
+
 @import "./layout/container";
 @import "./layout/nav";
 @import "./layout/footer";
-@import "./pages/bastille";
-@import "./pages/home";
-@import "./pages/le-gourmand";
-@import "./pages/the-full-palette";
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+@import "./pages/menu-pages";
+@import "./pages/home-page";
+
+
 

@@ -1,18 +1,19 @@
-.navbar {
+.navbar{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    justify-items: center;
-
-    &__menu {
-        list-style-type: none;
-        display: flex;
-
-        i {
-            display: none;
+    &__menu{
+        display:flex;
+        flex-direction: row;
+        li{
+            list-style-type: none;
+            margin: 25px;
         }
-
-        &--link {
+        &--link{
             text-decoration: none;
+            font-family: $font-title;
+            
         }
+        
     }
 }
