@@ -1,1 +1,40 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+}
+
+.navbar__menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__menu i {
+  display: none;
+}
+
+.navbar__menu--link {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #353535;
+}
+
+.footer__title {
+  font-family: "shrikhand", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

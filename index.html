@@ -18,27 +18,27 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <img src="images/ohmyfood.png" alt="logo">
-            <ul>
-                <li><a href=""></a> Restaurants</li>
-                <li>Contact us</li>
-                <div><i class="fas fa-map-marker-alt"></i> Paris, Belleville</div>
+            <ul class="navbar__menu">
+                <i class="fas fa-map-marker-alt">Paris, Belleville</i>
+                <li><a href="" class="navbar__menu--link">Restaurants</a> </li>
+                <li><a href="" class="navbar__menu--link"> Contact us</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="">
         <h1>Book the menu you like</h1>
-        <h2>Discover top-of-the-art restaurants we picked for you</h2>
-        <button>Explore our restaurants</button>
+        <h3>Discover top-of-the-art restaurants we picked for you</h2>
+        <button class="btn">Explore our restaurants</button>
     </section>
-    <section>
+    <side class="buttons">
         <h1>How it works</h1>
         <button><i class="fas fa-mobile-alt"></i> Choose a restaurant</button>
         <button><i class="fas fa-list"></i> create your menu</button>
         <button><i class="fas fa-store"></i>Go enjoy it at the restaurant</button>
-    </section>
-    <div>
+    </side>
+    <main class="restaurants">
         <h1>Restaurants</h1>
         <div>
             <figure>
@@ -82,11 +82,10 @@
                 </figcaption>
             </figure>
         </div>
-
-    </div>
-    <footer>
-        <h2>ohmyfood</h2>
-        <div>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__title">ohmyfood</h2>
+        <div class="footer__link">
             <a href=""><i class="fas fa-utensils fa-1x"></i>Suggest a restaurant</a>
             <a href=""><i class="fas fa-hands-helping fa-xs"></i>Become a partner</a>
             <a href="">Legal</a>

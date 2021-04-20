@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+    &__menu {
+        list-style-type: none;
+        display: flex;
+
+        i {
+            display: none;
+        }
+
+        &--link {
+            text-decoration: none;
+        }
+    }
+}

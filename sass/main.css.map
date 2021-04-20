@@ -1,16 +1,17 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AMAA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,aAAa,EAAE,MAAM;CAcxB;;AAZI,AAAD,aAAO,CAAC;EACJ,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,IAAI;CAShB;;AAXA,AAIG,aAJG,CAIH,CAAC,CAAC;EACE,OAAO,EAAE,IAAI;CAChB;;AAEA,AAAD,mBAAO,CAAC;EACJ,eAAe,EAAE,IAAI;CACxB;;ACfT,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAE,OAAO;CAO5B;;AALI,AAAD,cAAQ,CAAC;EACL,WAAW,ENGN,WAAW,EAAG,UAAU;CMDhC;;APML,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACZ",
     "sources": [
-        "main.sass",
+        "main.scss",
         "utils/_variables.scss",
+        "utils/_animations.scss",
         "base/_typography.scss",
         "component/_buttons.scss",
-        "layout/_nav.scss",
         "layout/_container.scss",
+        "layout/_nav.scss",
         "layout/_footer.scss",
-        "pages/_home.scss",
         "pages/_bastille.scss",
+        "pages/_home.scss",
         "pages/_le-gourmand.scss",
         "pages/_the-full-palette.scss"
     ],
