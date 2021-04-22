@@ -6,6 +6,7 @@
 .btn {
   width: 200px;
   height: 50px;
+  margin: 50px;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#f18ed5));
   background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #f18ed5);
   color: white;
@@ -15,6 +16,25 @@
           justify-content: center;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.geolocation {
+  background-color: #eaeaea;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.geolocation i {
+  margin: 15px;
 }
 
 .navbar {
@@ -47,11 +67,11 @@
 
 .navbar__menu--link {
   text-decoration: none;
-  font-family: "Shrikhand", sans-serif;
 }
 
 .footer {
   background-color: #353535;
+  width: 100vw;
   height: 30vh;
   padding: 40px 30px;
 }
@@ -90,5 +110,31 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.explore {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore h2 {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+  text-align: center;
+}
+
+.explore p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
