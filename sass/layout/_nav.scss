@@ -1,20 +1,23 @@
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    &__menu{
-        display:flex;
+
+    &__menu {
+        display: flex;
         flex-direction: row;
-        li{
+
+        li {
             list-style-type: none;
             margin: 25px;
         }
-        &--link{
+
+        &--link {
             text-decoration: none;
-            
-          
+            font-weight: 600;
+            color: inherit;
+
         }
-        
+
     }
 }

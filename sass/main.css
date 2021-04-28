@@ -7,8 +7,8 @@
   width: 200px;
   height: 50px;
   margin: 50px;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#f18ed5));
-  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #f18ed5);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   border: none;
   -webkit-box-pack: center;
@@ -16,25 +16,8 @@
           justify-content: center;
   border-radius: 100px;
   cursor: pointer;
-}
-
-.geolocation {
-  background-color: #eaeaea;
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Roboto", sans-serif;
-}
-
-.geolocation i {
-  margin: 15px;
+  -webkit-box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -67,6 +50,8 @@
 
 .navbar__menu--link {
   text-decoration: none;
+  font-weight: 600;
+  color: inherit;
 }
 
 .footer {
@@ -112,8 +97,27 @@
           justify-content: center;
 }
 
+.geolocation {
+  background-color: #eaeaea;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+}
+
+.geolocation i {
+  margin: 15px;
+}
+
 .explore {
-  background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,13 +132,91 @@
 
 .explore h2 {
   font-family: "Roboto", sans-serif;
+  font-size: 2em;
   padding: 50px;
   text-align: center;
 }
 
 .explore p {
   font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
   font-weight: 300;
   text-align: center;
+}
+
+.howto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.howto h1 {
+  font-family: "Roboto", sans-serif;
+  padding: 50px 0 40px 5px;
+}
+
+.howto__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howto__buttons--steps {
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  width: 90vw;
+  border-radius: 25px;
+  margin: 15px;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howto__buttons--steps i {
+  margin-right: 20px;
+}
+
+.howto__buttons--steps span {
+  background-color: #9356dc;
+  color: white;
+  font-weight: bold;
+  width: 3em;
+  line-height: 3em;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: -10px;
+}
+
+.howto__buttons--steps:hover {
+  cursor: pointer;
+  background-color: #ff79da;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=main.css.map */
