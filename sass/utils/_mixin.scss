@@ -1,5 +1,5 @@
 @mixin shadow {
-    box-shadow: 0px 6px 6px rgba(0,0,0, 0.3);
+    box-shadow: 0px 6px 6px rgba(0,0,0, 0.2);
 
 }
 
@@ -11,7 +11,6 @@
 
 @mixin btn-style {
     background-image: $btn-color;
-    color: white;
     border: none;
     justify-content: center;
     border-radius: 100px;

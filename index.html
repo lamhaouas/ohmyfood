@@ -17,81 +17,106 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar">
             <img src="images/ohmyfood.png" alt="logo">
             <ul class="navbar__menu">
-                <li><a href="" class="navbar__menu--link">Restaurants</a> </li>
-                <li><a href="" class="navbar__menu--link">How it works</a></li>
-                <li><a href="" class="navbar__menu--link"> Contact us</a></li>
+                <li><a href="#restaurants" class="navbar__menu--link">Restaurants</a> </li>
+                <li><a href="#how" class="navbar__menu--link">How it works</a></li>
+                <li><a href="#footer" class="navbar__menu--link"> Contact us</a></li>
             </ul>
         </nav>
     </header>
+    <div class="spinner-box">
+        <div class="spinner-box__border">
+            <div class="spinner-box__border--core"></div>
+        </div>
+    </div>
     <section class="geolocation">
         <i class="fas fa-map-marker-alt"></i>
         <p>Paris, Belleville</p>
     </section>
-    <main>
-        <section class="explore">
-            <h2>Book the menu you like</h2>
-            <p>Discover top-of-the-art restaurants we picked for you</p>
-            <button class="btn">Explore our restaurants</button>
-        </section>
-        <side class="howto">
-            <h1>How it works</h1>
-            <div class="howto__buttons">
-                <button class="howto__buttons--steps"><span>1</span><i class="fas fa-mobile-alt"></i> Choose a restaurant</button>
-                <button class="howto__buttons--steps"><span>2</span><i class="fas fa-list"></i> create your menu</button>
-                <button class="howto__buttons--steps"><span>3</span><i class="fas fa-store"></i>Go enjoy it at the restaurant</button>
-            </div>
-        </side>
-        <section class="restaurants">
-            <h1>Restaurants</h1>
-            <div>
-                <figure>
-                    <a href="">
-                        <img src="images/the-full-palette380x250.jpg" alt="the Full Palette">
-                        <span></span>
-                    </a>
-                    <figcaption>
-                        <h4>The Full Palette</h4>
-                        <h5>New york</h5>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <a href="">
-                        <img src="images/the-enchanted-plate380x250.jpg" alt="The Enchanted Plate">
-                        <span></span>
-                    </a>
-                    <figcaption>
-                        <h4>The Enchanted Plate</h4>
-                        <h5>New york</h5>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <a href="">
-                        <img src="images/bastille380x250.jpg" alt="Bastille">
-                        <span></span>
-                    </a>
-                    <figcaption>
-                        <h4>Bastille</h4>
-                        <h5>New york</h5>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <a href="">
-                        <img src="images/le-gourmand380x250.jpg" alt="Le Gourmand">
-                        <span></span>
-                    </a>
-                    <figcaption>
-                        <h4>Le Gourmand</h4>
-                        <h5>New york</h5>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
+
+    <section class="explore">
+        <h2>Book the menu you like</h2>
+        <p>Discover top-of-the-art restaurants we picked for you</p>
+        <button class="btn">Explore our restaurants</button>
+    </section>
+    <side class="howto" id="how">
+        <h1>How it works</h1>
+        <div class="howto__buttons">
+            <button class="howto__buttons--steps"><span>1</span><i class="fas fa-mobile-alt"></i> Choose a
+                restaurant</button>
+            <button class="howto__buttons--steps"><span>2</span><i class="fas fa-list"></i> create your
+                menu</button>
+            <button class="howto__buttons--steps"><span>3</span><i class="fas fa-store"></i>Go enjoy it at the
+                restaurant</button>
+        </div>
+    </side>
+    <section class="restaurants" id="restaurants">
+        <h1>Restaurants</h1>
+        <div class="cards">
+            <figure class="card">
+                <a href="">
+                    <img src="images/the-full-palette380x250.jpg" alt="the Full Palette">
+                    <span>New</span>
+                </a>
+                <figcaption class="card__caption">
+                    <h3>The Full Palette</h3>
+                    <h5>New york</h5>
+                </figcaption>
+                <div class="heart icon"></div>
+
+
+
+            </figure>
+            <figure class="card">
+                <a href="">
+                    <img src="images/the-enchanted-plate380x250.jpg" alt="The Enchanted Plate">
+                    <span>New</span>
+                </a>
+                <figcaption class="card__caption">
+                    <h3>The Enchanted Plate</h3>
+                    <h5>New york</h5>
+                </figcaption>
+                <div>
+                    <i class="fas fa-heart fa-lg fa-2x full_heart"></i>
+                    <i class="far fa-heart fa-lg fa-2x empty_heart"></i>
+                </div>
+            </figure>
+            <figure class="card">
+                <a href="">
+                    <img src="images/bastille380x250.jpg" alt="Bastille">
+
+                </a>
+                <figcaption class="card__caption">
+                    <h3>Bastille</h3>
+                    <h5>New york</h5>
+                </figcaption>
+                <div>
+                    <i class="fas fa-heart fa-lg fa-2x full_heart"></i>
+                    <i class="far fa-heart fa-lg fa-2x empty_heart"></i>
+                </div>
+            </figure>
+            <figure class="card">
+                <a href="">
+                    <img src="images/le-gourmand380x250.jpg" alt="Le Gourmand">
+
+                </a>
+                <figcaption class="card__caption">
+                    <h3>Le Gourmand</h3>
+                    <h5>New york</h5>
+                </figcaption>
+                <div class="card__heart">
+                    <i class="fas fa-heart fa-lg fa-2x full_heart"></i>
+                    <i class="far fa-heart fa-lg fa-2x empty_heart"></i>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
         <h1 class="footer__title">ohmyfood</h1>
         <div class="footer__list">
             <a href="" class="footer__list--link"><i class="fas fa-utensils fa-1x"></i>Suggest a restaurant</a>

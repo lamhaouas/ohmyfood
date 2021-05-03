@@ -2,8 +2,16 @@
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
-$background-color: #f6f6f6;
+$background-color1: #ececec;
+$background-color2: #f7f7f7;
 $btn-color: linear-gradient(to bottom right, $secondary-color, $primary-color);
+$btn-color-hover: linear-gradient(to bottom right, $primary-color, $secondary-color);
 // Fonts
-$font-text: 'Roboto', sans-serif;
-$font-title: 'Shrikhand' , sans-serif;
+$font-text: 'Roboto',sans-serif;
+$font-title: 'Shrikhand',sans-serif;
+//Breakpoints
+$breakpoints: (
+    phone : 498px,
+    tablet : 768px,
+    desktop: 1200px,
+)

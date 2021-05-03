@@ -1,3 +1,7 @@
 .menu-title {
     @include menu-titles;
 }
+
+.menu {
+    background-color: $background-color1;
+}
