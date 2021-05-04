@@ -17,74 +17,85 @@
 </head>
 
 <body>
-    <header>
-        <i class="fas fa-arrow-left"></i>
+    <header class="pagehead">
+        <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
         <img src="images/ohmyfood.png" alt="logo">
     </header>
-    <main>
-        <img src="images/the-enchanted-plate380x250.jpg" alt="The Enchanted Plate">
-        <h1>The Enchanted Plate</h1>
-        <i class="far fa-heart"></i>
-        <section>
-            <h4>ENTREES</h4>
-            <div>
-                <p>Foie Gras Ravioli</p>
+    <img class="imgmenu" src="images/the-enchanted-plate380x250.jpg" alt="The Enchanted Plate">
+    <main class="menu">
+        <head class="menu__head">
+            <h2 class="menu__head--title">The Enchanted Plate</h2>
+            <div class="heart icon">
+                <i class="fas fa-heart fa-lg fa-2x full_heart"></i>
+                <i class="far fa-heart fa-lg fa-2x empty_heart"></i>
+            </div>
+        </head>
+        <section class="menu__list">
+            <div class="menu__list--title">
+                <h4>ENTREES</h4>
+            </div>
+
+            <div class="menu__list--card">
+                <h5>Foie Gras Ravioli</h5>
                 <p>with truffle cream</p>
                 <p>25€</p>
             </div>
-            <div>
-                <p>Oscietra Caviar</p>
+            <div class="menu__list--card">
+                <h5>Oscietra Caviar</h5>
                 <p>With buckwheat blinis</p>
                 <p>35€</p>
             </div>
-            <div>
-                <p>Lobster and Leek Foam</p>
+            <div class="menu__list--card">
+                <h5>Lobster and Leek Foam</h5>
                 <p>Marinated with orange zest</p>
                 <p>20€</p>
             </div>
-            <div>
-                <p>Duck Foie Gras</p>
+            <div class="menu__list--card">
+                <h5>Duck Foie Gras</h5>
                 <p>with fig jam and grilled baguette</p>
                 <p>35€</p>
             </div>
-            <h4>MAIN DISH</h4>
-            <div>
-                <p>Fresh Buttered Scallops</p>
+            <div class="menu__list--title">
+                <h4>MAIN DISH</h4>
+            </div>
+
+            <div class="menu__list--card">
+                <h5>Fresh Buttered Scallops</h5>
                 <p>woth white celery puree</p>
                 <p>40€</p>
             </div>
-            <div>
-                <p>Pan-Fried Lobster</p>
+            <div class="menu__list--card">
+                <h5>Pan-Fried Lobster</h5>
                 <p>with mashed sweet potatoes</p>
                 <p>35€</p>
             </div>
-            <div>
-                <p>Braised Ox Tail</p>
+            <div class="menu__list--card">
+                <h5>Braised Ox Tail</h5>
                 <p>with wild rice and lemon zest</p>
                 <p>44€</p>
 
             </div>
-            <h4>DESSERTS</h4>
-            <div>
-                <p>Chocolate and Hazelnut Macaroons</p>
+            <div class="menu__list--title">
+                <h4>DESSERTS</h4>
+            </div>
+
+            <div class="menu__list--card">
+                <h5>Chocolate and Hazelnut Macaroons</h5>
                 <p>with caramel butter ice cream </p>
                 <p>18€</p>
             </div>
-            <div>
-                <p>Baba au rhum</p>
+            <div class="menu__list--card">
+                <h5>Baba au rhum</h5>
                 <p>with lemon drizzle</p>
                 <p>22€</p>
             </div>
-            <div>
-                <p>Lemon Meringue Pie</p>
+            <div class="menu__list--card">
+                <h5>Lemon Meringue Pie</h5>
                 <p>Destructured</p>
                 <p>23€</p>
             </div>
-
-
-
         </section>
-        <button>Order</button>
+        <button class="btn">Order</button>
     </main>
     <footer class="footer">
         <h2 class="footer__title">ohmyfood</h2>

@@ -3,39 +3,25 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-
-
-
+    margin-bottom: 6px;
+    @include shadow;
     &__menu {
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
-        @media screen and (max-width: map-get($breakpoints, phone)) {
+        @media screen and (max-width: map-get($breakpoints, tablet)) {
             display: none;
         }
-
-
-        @media screen and (min-width: map-get($breakpoints, desktop)) {
-
-            display: flex;
-            flex-direction: row;
-        }
-
         li {
             list-style-type: none;
-
         }
-
         &--link {
             text-decoration: none;
             color: inherit;
             font-family: $font-text;
-            padding: 5px;
-
+            padding: 10px;
         }
-
     }
 }

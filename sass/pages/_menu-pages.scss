@@ -1,7 +1,57 @@
-.menu-title {
-    @include menu-titles;
+
+
+.pagehead {
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    img {
+        height: 30px;
+        margin-left: 50px;
+    }
+
+    i {
+        padding: 20px;
+    }
+}
+
+.imgmenu {
+    position: absolute;
+    z-index: -1;
+
 }
 
 .menu {
-    background-color: $background-color1;
+    background-color: $background-color2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    z-index: 1;
+    top: 11rem;
+
+    &__head {
+    
+        &--title{
+            @include menu-titles;
+            padding: 5px 0 0 5px;
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--card {
+            border-radius: 25px;
+            background-color: white;
+            margin: 5px 0 5px 0;
+            @include shadow;
+
+        }
+    }
+
+
 }
