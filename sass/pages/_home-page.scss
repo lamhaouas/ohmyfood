@@ -118,7 +118,6 @@
 
 .restaurants {
     background-color: $background-color2;
-    width: 100%;
     margin: 60px 0 60px 0;
 
     h1 {
@@ -145,6 +144,7 @@
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 20px;
+    width: 100vw;
 
 }
 
@@ -152,10 +152,12 @@
     position: relative;
     @include shadow;
     border-radius: 25px;
+   
 
     img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        width: 100%;
 
     }
 
@@ -188,6 +190,7 @@
         &--icon {
             color: white;
             padding: 3px;
+            align-self: center;
 
             -webkit-text-stroke: 1px black;
             cursor: pointer;

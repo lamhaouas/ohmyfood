@@ -1,5 +1,3 @@
-
-
 .pagehead {
     height: 10vh;
     display: flex;
@@ -7,6 +5,7 @@
     align-items: center;
 
     img {
+
         height: 30px;
         margin-left: 50px;
     }
@@ -17,24 +16,29 @@
 }
 
 .imgmenu {
-    position: absolute;
     z-index: -1;
-
 }
 
 .menu {
     background-color: $background-color2;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+
     position: relative;
+    top: -3rem;
     z-index: 1;
-    top: 11rem;
+    padding: 10px;
 
     &__head {
-    
-        &--title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+
+
+        &--title {
             @include menu-titles;
-            padding: 5px 0 0 5px;
+
         }
 
     }
@@ -44,11 +48,50 @@
         flex-direction: column;
         justify-content: space-between;
 
+        &--title {
+            font-weight: 400;
+            font-family: $font-text;
+            padding-bottom: 5px;
+            margin-bottom: 0px;
+        }
+
+        &--line {
+            width: 40px;
+            height: 3px;
+            background-color: $tertiary-color;
+
+        }
+
         &--card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             border-radius: 25px;
             background-color: white;
+            padding: 15px;
             margin: 5px 0 5px 0;
             @include shadow;
+
+            .card-desc {
+                font-family: $font-text;
+
+                h5 {
+                    font-weight: 700;
+                    font-size: 1rem;
+                    margin: 5px;
+                }
+
+                p {
+                    font-weight: normal;
+                    font-size: 0.8rem;
+                    margin: 5px;
+                }
+            }
+
+            .card-price {
+                font-family: $font-text;
+                font-weight: bold;
+            }
 
         }
     }

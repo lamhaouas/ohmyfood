@@ -21,41 +21,88 @@
         <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
         <img src="images/ohmyfood.png" alt="logo">
     </header>
-    <main>
-        <img src="images/the-full-palette380x250.jpg" alt="The Full Palette">
-        <h1>The Full Palette</h1>
-        <i class="far fa-heart"></i>
-        <section class="menu">
-            <h4>ENTREES</h4>
-            <p>Escargot</p>
-            <p>with southern French spices</p>
-            <p>25€</p>
-            <p>Duck Foie Gras</p>
-            <p>with black truffle shavings</p>
-            <p>35€</p>
-            <p>Fried egg</p>
-            <p>...</p>
-            <p>2O€</p>
-            <h4>MAIN DISH</h4>
-            <p>Herb-Encrusted Steak</p>
-            <p>with delicately sliced and seasoned vegetables</p>
-            <p>40€</p>
-            <p>Ox Tail Shepard's Pie </p>
-            <p>with black truffle and pureed parsnips</p>
-            <p>35€</p>
-            <p>Filet of Sole</p>
-            <p>with citrus dressing</p>
-            <p>44€</p>
-            <h4>DESSERTS</h4>
-            <p>Paris-Brest</p>
-            <p>Revisited</p>
-            <p>18€</p>
-            <p>Chocolate Macaroons</p>
-            <p>With vanilla ice cream</p>
-            <p>22€</p>
-            <p>Chocolate Mousse</p>
-            <p>With spices and black truffle</p>
-            <p>23€</p>
+    <img src="images/the-full-palette380x250.jpg" alt="The Full Palette">
+    <main class="menu">
+        <div class="menu__head">
+            <h2 class="menu__head--title">The Full Palette</h2>
+            <div class="card__caption--icon"><i class="fas fa-heart fa-lg fa-2x "></i></div>
+        </div>
+        <section class="menu__list">
+            <h4 class="menu__list--title">ENTREES</h4>
+            <div class="menu__list--line"></div>
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Escargot</h5>
+                    <p>with southern French spices</p>
+                </div>
+                <p class="card-price">25€</p>
+            </div>
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Duck Foie Gras</h5>
+                    <p>with black truffle shavings</p>
+                </div>
+                <p class="card-price">35€</p>
+            </div>
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Fried egg</h5>
+                    <p>...</p>
+                </div>
+                <p class="card-price">2O€</p>
+            </div>
+            <h4 class="menu__list--title">MAIN DISH</h4>
+            <div class="menu__list--line">
+            </div>
+
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Herb-Encrusted Steak</h5>
+                    <p>with delicately sliced and seasoned vegetables</p>
+                </div>
+                <p class="card-price">40€</p>
+            </div>
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Ox Tail Shepard's Pie </h5>
+                    <p>with black truffle and pureed parsnips</p>
+                </div>
+                <p class="card-price">35€</p>
+            </div>
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Filet of Sole</h5>
+                    <p>with citrus dressing</p>
+                </div>
+                <p class="card-price">44€</p>
+            </div>
+
+            <h4 class="menu__list--title">DESSERTS</h4>
+            <div class="menu__list--line">
+            </div>
+
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Paris-Brest</h5>
+                    <p>Revisited</p>
+                </div>
+                <p class="card-price">18€</p>
+            </div>
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Chocolate Macaroons</h5>
+                    <p>With vanilla ice cream</p>
+                </div>
+
+                <p class="card-price">22€</p>
+            </div>
+            <div class="menu__list--card">
+                <div class="card-desc">
+                    <h5>Chocolate Mousse</h5>
+                    <p>With spices and black truffle</p>
+                </div>
+                <p class="card-price">23€</p>
+            </div>
         </section>
         <button class="btn">Order</button>
     </main>
@@ -64,10 +111,10 @@
     <footer class="footer">
         <h2 class="footer__title">ohmyfood</h2>
         <div class="footer__list">
-            <a href="" class="footer__list--link"><i class="fas fa-utensils fa-1x"></i>Suggest a restaurant</a>
-            <a href="" class="footer__list--link"><i class="fas fa-hands-helping fa-xs"></i>Become a partner</a>
-            <a href="" class="footer__list--link">Legal</a>
-            <a href="" class="footer__list--link">Contact</a>
+            <a href="#" class="footer__list--link"><i class="fas fa-utensils fa-1x"></i>Suggest a restaurant</a>
+            <a href="#" class="footer__list--link"><i class="fas fa-hands-helping fa-xs"></i>Become a partner</a>
+            <a href="#" class="footer__list--link">Legal</a>
+            <a href="mailto:email@example.com" class="footer__list--link">Contact</a>
         </div>
     </footer>
 </body>
