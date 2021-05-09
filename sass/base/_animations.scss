@@ -1,26 +1,74 @@
-@keyframes spin {
-    0% {
+@keyframes load {
+   
+    0%{
+        opacity: 1;
+        color: $primary-color;
         transform: rotate(0deg);
-        opacity: 1;
+        
+        
     }
-
-    25% {
+    30%{
+        opacity: 1;
+        color: $secondary-color;
         transform: rotate(90deg);
-        opacity: 1;
-    }
 
-    50% {
+    }
+    50%{
+        opacity: 1;
+        color: $primary-color;
         transform: rotate(180deg);
-        opacity: 1;
-    }
 
-    75% {
+    }
+    75%{
+        opacity: 1;
+        color: $secondary-color;
         transform: rotate(270deg);
-        opacity: 0.6;
-    }
 
-    100% {
-        transform: rotate(360deg);
+    }
+    100%{
+        opacity: 1;
+        color: $primary-color;
+        transform: rotate(390deg);
+
+    }
+    
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
         opacity: 1;
     }
+
 }
+// @keyframes spin {
+//     0% {
+//         transform: rotate(0deg);
+//         opacity: 1;
+//     }
+
+//     25% {
+//         transform: rotate(90deg);
+//         opacity: 1;
+//     }
+
+//     50% {
+//         transform: rotate(180deg);
+//         opacity: 1;
+//     }
+
+//     75% {
+//         transform: rotate(270deg);
+//         opacity: 0.6;
+//     }
+
+//     100% {
+//         transform: rotate(360deg);
+//         opacity: 1;
+//     }
+// }

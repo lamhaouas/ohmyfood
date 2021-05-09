@@ -23,11 +23,13 @@
     background-color: $background-color2;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-
     position: relative;
     top: -3rem;
     z-index: 1;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__head {
         display: flex;
@@ -64,37 +66,78 @@
 
         &--card {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             border-radius: 25px;
             background-color: white;
-            padding: 15px;
             margin: 5px 0 5px 0;
+            height: 100px;
+
+
             @include shadow;
 
-            .card-desc {
-                font-family: $font-text;
+            &-desc {
+                width: 100%;
+                display: flex;
 
-                h5 {
-                    font-weight: 700;
-                    font-size: 1rem;
-                    margin: 5px;
+                .card-desc {
+                    padding: 15px;
+                    width: 100%;
+
+                    h5 {
+                        font-family: $font-text;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        margin: 5px;
+                    }
+
+                    p {
+                        font-family: $font-text;
+                        font-size: 1rem;
+                        margin: 5px;
+
+                    }
+
                 }
 
-                p {
-                    font-weight: normal;
-                    font-size: 0.8rem;
-                    margin: 5px;
+                .card-price {
+                    font-family: $font-text;
+                    font-weight: bold;
+                    align-self: flex-end;
+                    padding: 5px 10px;
                 }
             }
 
-            .card-price {
-                font-family: $font-text;
-                font-weight: bold;
+            &-check {
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: all 500ms ease-in-out;
+                background-color: $tertiary-color;
+                color: white;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                width: 0%;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: 40%;
+                    left: 40%;
+                }
+            }
+
+
+            :hover>&-check {
+
+                transform: scale(1);
+                width: 30%;
+
+
+                i {
+                    transform: rotate(360deg);
+                    transition: transform 500ms ease-in-out;
+
+                }
             }
 
         }
     }
-
-
 }
