@@ -1,8 +1,11 @@
 .pagehead {
     height: 10vh;
     display: flex;
-    justify-content: start;
+    flex-direction: row;
+    justify-items: center;
     align-items: center;
+
+
 
     img {
 
@@ -16,10 +19,21 @@
 }
 
 .imgmenu {
-    z-index: -1;
+
+    object-fit: cover;
+
 }
 
+.slidedown {}
+
+
 .menu {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @include flex-column;
+        width: 50%;
+
+    }
+
     background-color: $background-color2;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -29,7 +43,10 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+
+
+
 
     &__head {
         display: flex;
@@ -46,11 +63,9 @@
     }
 
     &__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
-        &--title {
+
+        @include flex-column &--title {
             font-weight: 400;
             font-family: $font-text;
             padding-bottom: 5px;
@@ -66,10 +81,19 @@
 
         &--card {
             display: flex;
+            flex-direction: row;
             border-radius: 25px;
             background-color: white;
             margin: 5px 0 5px 0;
             height: 100px;
+            -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-delay: 0.1s;
+
 
 
             @include shadow;
@@ -77,8 +101,12 @@
             &-desc {
                 width: 100%;
                 display: flex;
+                flex-direction: row;
+                justify-content: space-between;
 
                 .card-desc {
+
+                    @include flex-column;
                     padding: 15px;
                     width: 100%;
 
