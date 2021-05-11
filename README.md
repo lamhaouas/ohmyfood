@@ -13,7 +13,7 @@ I used:
 
 
 ## The Mock-up for the home page 
-![desktop](/images/Homepage.png)
+![desktop](/images/mockups/Homepage.png)
 
 ## The Mock-Up for the menu pages
-![phone](/images/bastillemenu.png)
+![phone](/images/mockups/bastillemenu.png)
