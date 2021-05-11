@@ -13,25 +13,6 @@
 
 }
 
-.loader {
-
-    animation: fadein 3000ms ease-in
-}
-
-.loaderbar {
-
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    height: 10px;
-    width: 300px;
-    z-index: 2;
-    transform-origin: left;
-    transform: scaleX(0);
-    animation: load 2000ms cubic-bezier(.32, 0, .07, 1);
-    opacity: 1;
-    background-color: $primary-color;
-}
 
 
 .explore {

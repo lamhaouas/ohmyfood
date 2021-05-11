@@ -78,27 +78,21 @@
   }
 }
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes transitionIn {
   0% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    visibility: visible;
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-@keyframes fadeInUp {
+@keyframes transitionIn {
   0% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    visibility: visible;
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -138,6 +132,29 @@ body {
   background-image: linear-gradient(to bottom right, #9356dc, #ff79da);
   -webkit-box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.loader {
+  -webkit-animation: fadein 3000ms ease-in;
+          animation: fadein 3000ms ease-in;
+}
+
+.loaderbar {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 30%;
+  width: 40vw;
+  height: 10px;
+  z-index: 2;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: load 2400ms cubic-bezier(0.32, 0, 0.07, 1);
+          animation: load 2400ms cubic-bezier(0.32, 0, 0.07, 1);
+  opacity: 1;
+  background-color: #9356dc;
 }
 
 .menubody {
@@ -244,17 +261,25 @@ body {
 
 .pagehead {
   height: 10vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .pagehead {
+    width: 70vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .pagehead img {
@@ -269,10 +294,48 @@ body {
 .imgmenu {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 40vh;
+}
+
+@media screen and (min-width: 768px) {
+  .imgmenu {
+    width: 70vw;
+  }
+}
+
+.cards div:nth-child(1) {
+  -webkit-animation: transitionIn 1000ms;
+          animation: transitionIn 1000ms;
+}
+
+.cards div:nth-child(2) {
+  -webkit-animation: transitionIn 1500ms;
+          animation: transitionIn 1500ms;
+}
+
+.cards div:nth-child(3) {
+  -webkit-animation: transitionIn 2000ms;
+          animation: transitionIn 2000ms;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    justify-items: space-between;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+  }
 }
 
 .menu {
-  background-color: #f7f7f7;
+  background-color: #f6f6f6;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: relative;
@@ -286,22 +349,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 50%;
+    width: 80%;
   }
 }
 
@@ -327,19 +385,6 @@ body {
           justify-content: center;
 }
 
-.menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .menu__list--title {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -363,18 +408,17 @@ body {
           flex-direction: row;
   border-radius: 25px;
   background-color: white;
-  margin: 5px 0 5px 0;
+  margin: 8px;
   height: 100px;
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  width: 90%;
   -webkit-box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .menu__list--card {
+    width: 20rem;
+  }
 }
 
 .menu__list--card-desc {
@@ -403,7 +447,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  width: 100%;
 }
 
 .menu__list--card-desc .card-desc h5 {
@@ -483,28 +526,6 @@ body {
   margin: 15px;
 }
 
-.loader {
-  -webkit-animation: fadein 3000ms ease-in;
-          animation: fadein 3000ms ease-in;
-}
-
-.loaderbar {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  height: 10px;
-  width: 300px;
-  z-index: 2;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-animation: load 2000ms cubic-bezier(0.32, 0, 0.07, 1);
-          animation: load 2000ms cubic-bezier(0.32, 0, 0.07, 1);
-  opacity: 1;
-  background-color: #9356dc;
-}
-
 .explore {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,7 +537,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f7f7f7;
+  background-color: #f6f6f6;
 }
 
 .explore h2 {
@@ -635,7 +656,7 @@ body {
 }
 
 .restaurants {
-  background-color: #f7f7f7;
+  background-color: #f6f6f6;
   margin: 50px 0 60px 0;
 }
 
