@@ -2,7 +2,7 @@
 # ohmyfood
 
 * ohmyfood is my second project learning web development,
-* The development is in CSS without Javascript.
+* Animations without Javascript.
 * No framework, I used only SASS and CSS animations.
 * The whole website is developed using the mobile-first approach and it is responsive on mobile, tablet , and desktop.
 
